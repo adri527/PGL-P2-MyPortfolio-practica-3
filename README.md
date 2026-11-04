@@ -71,16 +71,6 @@ flutter pub get
 flutter run -d chrome
 ```
 
-## Capturas de pantalla
-
-| Bienvenida | Drawer | Portfolio |
-|---|---|---|
-| ![Bienvenida](docs/screenshots/bienvenida.png) | ![Drawer](docs/screenshots/drawer.png) | ![Portfolio](docs/screenshots/portfolio.png) |
-
-| Lista vacía | Modal de alta | Lista con hobbies |
-|---|---|---|
-| ![Lista vacía](docs/screenshots/hobbies_vacia.png) | ![Modal](docs/screenshots/hobbies_modal.png) | ![Lista](docs/screenshots/hobbies_lista.png) |
-
 ## Entrega
 
 Rama: `P2-Tarea3-Formulario`
@@ -89,6 +79,4 @@ Rama: `P2-Tarea3-Formulario`
 
 Adrián Jacob Ramos Reverón
 
-## Asignatura
 
-Programación Multimedia y Dispositivos Móviles · 2º DAM
