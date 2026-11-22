@@ -1,9 +1,13 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/app_colors.dart';
 import 'package:my_portfolio/router/app_router.dart';
+import 'package:my_portfolio/services/session_controller.dart';
 
 void main() {
   runApp(const MyPortfolioApp());
+  unawaited(sessionController.restoreSession());
 }
 
 class MyPortfolioApp extends StatelessWidget {

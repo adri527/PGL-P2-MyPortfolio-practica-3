@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:my_portfolio/constants/app_colors.dart';
 import 'package:my_portfolio/constants/app_routes.dart';
 import 'package:my_portfolio/constants/portfolio_data.dart';
+import 'package:my_portfolio/services/session_controller.dart';
 import 'package:my_portfolio/widgets/initials_avatar.dart';
 
 /// Elemento del menú: texto, icono y ruta a la que lleva.
@@ -84,6 +85,17 @@ class AppDrawer extends StatelessWidget {
                 context.go(item.route); // navega con go_router
               },
             ),
+          const Spacer(),
+          const Divider(height: 1),
+          ListTile(
+            leading: const Icon(Icons.logout),
+            title: const Text('Cerrar sesión'),
+            onTap: () async {
+              Navigator.of(context).pop();
+              await sessionController.logout();
+              if (context.mounted) context.go(AppRoutes.login);
+            },
+          ),
         ],
       ),
     );
